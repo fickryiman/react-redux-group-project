@@ -95,16 +95,16 @@ The My Profile section displays all reserved rockets and space missions.
   * Render a table with the missions' data (as per design).
   
 - Redux: Write actions and reducers for booking rockets/dragons and joining missions
-  * - When a user clicks the "Reserve rocket" button or "Reserve dragon" button _[only if your team has 3 members]_, action needs to be dispatched to update the store. You need to get the ID of the reserved rocket and update the state. Remember you mustn't mutate the state. Instead, you need to return a new state object with all rockets, but the selected rocket will have an extra key `reserved` with its value set to `true`. You could use a JS `filter()` or `map()` to set the value of the new state - i.e.:
+  * When a user clicks the "Reserve rocket" button or "Reserve dragon" button _[only if your team has 3 members]_, action needs to be dispatched to update the store. You need to get the ID of the reserved rocket and update the state. Remember you mustn't mutate the state. Instead, you need to return a new state object with all rockets, but the selected rocket will have an extra key `reserved` with its value set to `true`. You could use a JS `filter()` or `map()` to set the value of the new state - i.e.:
 
   ```javascript
-  const newState = state.map((rocket) => {
-    if (rocket.id !== id) return rocket
-    return { ...rocket, reserved: true }
-  })
-```
+    const newState = state.map((rocket) => {
+      if (rocket.id !== id) return rocket
+      return { ...rocket, reserved: true }
+    })
+  ```
 
-  * Regardless of which method you choose, make sure you place all your logic in the reducer. In the React view file, you should only dispatch the action with the correct rocket ID as an argument.
+  * Place all the logics in the reducer. In the React view file, should only dispatch the action with the correct rocket ID as an argument.
   * Create a reducer and action dispatcher for the "Join Mission" button. The logic here is practically the same as with rockets - you need to pass the mission's ID to the corresponding action and update the missions' state with the selected mission having a new key/value - `reserved: true`.
 
 - Redux: Write actions and reducers for canceling rockets/dragons and leaving missions
