@@ -12,6 +12,9 @@ In this project, we will be working with the real live data from the SpaceX API 
 - [📗 Table of Contents](#-table-of-contents)
 - [📖 Space Travelers' Hub](#-space-travelers-hub)
     - [How to build the "Space Travelers' Hub" application?](#how-to-build-the-space-travelers-hub-application)
+      - [Rockets /Dragons](#rockets-dragons)
+      - [Missions](#missions)
+      - [My Profile](#my-profile)
     - [Projects list](#projects-list)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
@@ -40,22 +43,22 @@ Space Traveler's Hub is a website that working with the real live data from Spac
 ### How to build the "Space Travelers' Hub" application?
 The Space Travelers' Hub consists of Rockets, Missions, and the My Profile section.
 
-Rockets /Dragons
+#### Rockets /Dragons
 The Rockets section displays a list of all available SpaceX rockets. Users can book each rocket by clicking the reservation button or cancel the previously made booking. 
 <p align="center">
-  <img src="./public/space-travelers__rockets.png" alt="books" width="500px" />
+  <img src="./public/space-travelers__rockets.png" alt="rockets" width="500px" />
 </p>
 
-Missions
+#### Missions
 The Missions section displays a list of current missions along with their brief description and participation status. There is also a button next to each mission that allows users to join the selected mission or leave the mission the user joined earlier.
 <p align="center">
-  <img src="./public/space-travelers__missions.png" alt="books" width="500px" />
+  <img src="./public/space-travelers__missions.png" alt="missions" width="500px" />
 </p>
 
-My Profile
+#### My Profile
 The My Profile section displays all reserved rockets and space missions.
 <p align="center">
-  <img src="./public/space-travelers__my-profile" alt="books" width="500px" />
+  <img src="./public/space-travelers__my-profile.png" alt="profile" width="500px" />
 </p>
 
 ### Projects list
