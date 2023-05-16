@@ -9,7 +9,7 @@ const ShowMission = (missionId, missionName, description) => {
       <td className="mission-name">{missionName}</td>
       <td className="mission-description">{description}</td>
       <td className="member-button"><button type="button">NOT A MEMBER</button></td>
-      <td className="join-button"><button type="button" onClick={() => dispatch(joinMission(missionId))}>JOIN MISSION</button></td>
+      <td className="join-button"><button type="button" id={missionId} onClick={() => dispatch(joinMission(missionId))}>Join Mission</button></td>
     </tr>
   );
 };
