@@ -1,5 +1,5 @@
 import { useSelector } from 'react-redux';
-import ShowMission from './ShowMission';
+import ShowMission from './showMission';
 import './Mission.css';
 
 const Missions = () => {
