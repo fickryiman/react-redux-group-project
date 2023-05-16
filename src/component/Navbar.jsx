@@ -28,6 +28,7 @@ const Navbar = () => (
           </NavLink>
         </li>
       </ul>
+      <hr className="separator"/>
     </div>
     <Routes>
       <Route path="/" element={<MyProfile />} />
