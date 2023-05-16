@@ -23,7 +23,7 @@ const missionSlice = createSlice({
         }
         return { ...mission, reserved: true };
       });
-      console.log(newState);
+      console.log(newState, action.payload);
     },
   },
   extraReducers: (builder) => {
