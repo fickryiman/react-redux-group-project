@@ -21,6 +21,7 @@ const Navbar = () => (
             Missions
           </NavLink>
         </li>
+        <li>|</li>
         <li>
           <NavLink to="/" className={({ isActive, isPending }) => ((isPending ? 'pending' : isActive) ? 'active' : '')}>
             MyProfile
