@@ -46,19 +46,19 @@ The Space Travelers' Hub consists of Rockets, Missions, and the My Profile secti
 #### Rockets /Dragons
 The Rockets section displays a list of all available SpaceX rockets. Users can book each rocket by clicking the reservation button or cancel the previously made booking. 
 <p align="center">
-  <img src="./public/space-travelers__rockets.png" alt="rockets" width="500px" />
+  <img src="./src/images/space-travelers__rockets.png" alt="rockets" width="600px" />
 </p>
 
 #### Missions
 The Missions section displays a list of current missions along with their brief description and participation status. There is also a button next to each mission that allows users to join the selected mission or leave the mission the user joined earlier.
 <p align="center">
-  <img src="./public/space-travelers__missions.png" alt="missions" width="500px" />
+  <img src="./src/images/space-travelers__missions.png" alt="missions" width="600px" />
 </p>
 
 #### My Profile
 The My Profile section displays all reserved rockets and space missions.
 <p align="center">
-  <img src="./public/space-travelers__my-profile.png" alt="profile" width="500px" />
+  <img src="./src/images/space-travelers__my-profile.png" alt="profile" width="600px" />
 </p>
 
 ### Projects list
