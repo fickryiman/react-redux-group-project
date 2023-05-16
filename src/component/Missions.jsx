@@ -1,5 +1,5 @@
 import { useSelector } from 'react-redux';
-import showMission from './showMission';
+import ShowMission from './ShowMission';
 import './Mission.css';
 
 const Missions = () => {
@@ -20,7 +20,8 @@ const Missions = () => {
             </tr>
           </thead>
           <tbody>
-            {missions.map((mission) => showMission(mission))}
+            {missions.map((mission) => (
+              ShowMission(mission.missionId, mission.missionName, mission.description)))}
           </tbody>
         </table>
       </div>
