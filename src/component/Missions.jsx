@@ -1,5 +1,6 @@
 import { useSelector } from 'react-redux';
-import showMissions from './showMission';
+import showMission from './showMission';
+import './Mission.css';
 
 const Missions = () => {
   const { missions, isLoading } = useSelector((state) => state.missions);
@@ -9,7 +10,19 @@ const Missions = () => {
   return (
     <div>
       <div className="missions-div">
-        {showMissions(missions)}
+        <table>
+          <thead>
+            <tr>
+              <td>Mission</td>
+              <td>Description</td>
+              <td>Status</td>
+              <td> </td>
+            </tr>
+          </thead>
+          <tbody>
+            {missions.map((mission) => showMission(mission))}
+          </tbody>
+        </table>
       </div>
     </div>
   );
