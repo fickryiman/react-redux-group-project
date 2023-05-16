@@ -1,0 +1,50 @@
+.mission-name {
+  width: 11%;
+}
+
+td {
+  padding: 0.5rem;
+}
+
+.mission-description {
+  width: 65%;
+}
+
+.member-button {
+  width: 7rem;
+}
+
+.member-button button {
+  width: 7.5rem;
+  height: 1.5rem;
+}
+
+table,
+td,
+th {
+  border: 1px solid grey;
+}
+
+.join-button {
+  width: 8.5rem;
+  text-align: center;
+}
+
+.join-button button {
+  height: 2.5rem;
+  width: 8rem;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: gainsboro;
+}
+
+.not-member {
+  background-color: grey;
+  color: white;
+}
+
+.active-member {
+  background-color: mediumturquoise;
+  color: white;
+}
