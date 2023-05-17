@@ -32,7 +32,7 @@ th {
   border-radius: 4px;
 }
 
-tbody tr:nth-child(odd) {
+.mission-body tr:nth-child(odd) {
   background-color: gainsboro;
 }
 

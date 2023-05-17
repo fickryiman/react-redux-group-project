@@ -1,0 +1,61 @@
+.profile-container {
+  width: 100%;
+}
+
+.profile-table {
+  width: 95%;
+  border: none;
+  margin: auto;
+}
+
+.profile-table table {
+  border-collapse: collapse;
+  border: none;
+}
+
+.profile-table td {
+  border: none;
+}
+
+.mission-table,
+.rocket-table thead {
+  border: none;
+}
+
+.mission-table,
+.rocket-table {
+  width: 100%;
+}
+
+.mission-head {
+  width: 50%;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.mission-row {
+  height: 3.5rem;
+}
+
+.mission-row td {
+  border: 1px solid #d5cdcd;
+}
+
+.rocket-table {
+  vertical-align: top;
+}
+
+.rocket-table,
+.mission-table thead {
+  border: none;
+}
+
+.rocket-head {
+  width: 50%;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.key-div {
+  height: 0;
+}
