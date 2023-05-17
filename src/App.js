@@ -3,6 +3,7 @@ import { useEffect } from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import Navbar from './component/Navbar';
 import { getMissions } from './Redux/missions/missionSlice';
+import { getRockets } from './Redux/rockets/rocketSlice';
 import './App.css';
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
 
   useEffect(() => {
     dispatch(getMissions());
+    dispatch(getRockets());
   }, []);
 
   if (isLoading) {

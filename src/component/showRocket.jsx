@@ -1,5 +1,5 @@
-const showRocket = (props) => {
-  console.log(props);
+const showRocket = (rockets) => {
+  console.log(rockets);
 };
 
 export default showRocket;
