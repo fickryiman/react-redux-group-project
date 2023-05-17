@@ -14,11 +14,6 @@ td {
   width: 7rem;
 }
 
-.member-button button {
-  width: 7.5rem;
-  height: 1.5rem;
-}
-
 table,
 td,
 th {
@@ -33,6 +28,8 @@ th {
 .join-button button {
   height: 2.5rem;
   width: 8rem;
+  background-color: inherit;
+  border-radius: 4px;
 }
 
 tbody tr:nth-child(odd) {
@@ -47,4 +44,23 @@ tbody tr:nth-child(odd) {
 .active-member {
   background-color: mediumturquoise;
   color: white;
+  border: 1px solid mediumturquoise;
+  border-radius: 4px;
+  width: 7.5rem;
+  height: 1.5rem;
+}
+
+.non-active {
+  background-color: grey;
+  border: 1px solid grey;
+  color: white;
+  border-radius: 8px;
+  width: 7.5rem;
+  height: 1.5rem;
+}
+
+.border-red {
+  border: 2px solid red;
+  background-color: white;
+  color: red;
 }
