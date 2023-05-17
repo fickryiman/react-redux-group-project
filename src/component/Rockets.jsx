@@ -13,11 +13,7 @@ const Rockets = () => {
   }, []);
 
   if (isLoading) {
-    return (
-      <div>
-        <h1>Loading...</h1>
-      </div>
-    );
+    return <div>Loading contents...</div>;
   }
 
   return (
