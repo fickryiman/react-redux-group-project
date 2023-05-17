@@ -14,12 +14,11 @@ const Missions = () => {
       dispatch(getMissions());
     }
   }, []);
-  console.log(missions);
   if (isLoading === undefined) {
     return <div>Loading...</div>;
   }
   return (
-    <div>
+    <>
       <div className="missions-div">
         <table>
           <thead>
@@ -30,7 +29,7 @@ const Missions = () => {
               <td> </td>
             </tr>
           </thead>
-          <tbody>
+          <tbody className="mission-body">
             {missions.map((mission) => (
               ShowMission(mission.missionId,
                 mission.missionName,
@@ -39,7 +38,7 @@ const Missions = () => {
           </tbody>
         </table>
       </div>
-    </div>
+    </>
   );
 };
 
