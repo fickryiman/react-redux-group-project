@@ -1,4 +1,5 @@
 import { useDispatch } from 'react-redux';
+import { reserveRocket } from '../Redux/rockets/rocketSlice';
 import './showRocket.css';
 
 const ShowRocket = (rocketId, rocketName, description, flickrImages, reserved) => {
@@ -43,6 +44,6 @@ const ShowRocket = (rocketId, rocketName, description, flickrImages, reserved) =
       </div>
     </div>
   );
-}
+};
 
 export default ShowRocket;
