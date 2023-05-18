@@ -1,0 +1,29 @@
+.card {
+  display: flex;
+  gap: 2%;
+  margin-bottom: 2.5%;
+}
+.flickr-images {
+  width: 17.5%;
+  height: fit-content;
+}
+
+.name-desc-button {
+  display: flex;
+  flex-direction: column;
+}
+
+.rocket-name {
+  margin: 0;
+}
+
+.reserve-rocket {
+  width: max-content;
+  height: max-content;
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3%;
+  cursor: pointer;
+}

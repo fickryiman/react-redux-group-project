@@ -2,6 +2,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { useEffect } from 'react';
 import showRocket from './showRocket';
 import { getRockets } from '../Redux/rockets/rocketSlice';
+import './Rockets.css';
 
 const Rockets = () => {
   const { rockets, isLoading } = useSelector((state) => state.rockets);
@@ -17,8 +18,11 @@ const Rockets = () => {
   }
 
   return (
-    <div>
-      <div>{showRocket(rockets)}</div>
+    <div className="rockets-container">
+      {/* <div>{showRocket(rockets)}</div> */}
+      <div className="cards">
+        {rockets.map((rocket) => showRocket(rocket))}
+      </div>
     </div>
   );
 };
