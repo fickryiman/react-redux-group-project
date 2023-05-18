@@ -12,7 +12,7 @@ const Navbar = () => (
       <h1 className="title">Space Traveler&apos;s Hub</h1>
       <ul id="sidebar">
         <li>
-          <NavLink to="/rockets" className={({ isActive, isPending }) => ((isPending ? 'pending' : isActive) ? 'active' : '')}>
+          <NavLink to="/" className={({ isActive, isPending }) => ((isPending ? 'pending' : isActive) ? 'active' : '')}>
             Rockets
           </NavLink>
         </li>
@@ -23,7 +23,7 @@ const Navbar = () => (
         </li>
         <li>|</li>
         <li>
-          <NavLink to="/" className={({ isActive, isPending }) => ((isPending ? 'pending' : isActive) ? 'active' : '')}>
+          <NavLink to="/myprofile" className={({ isActive, isPending }) => ((isPending ? 'pending' : isActive) ? 'active' : '')}>
             MyProfile
           </NavLink>
         </li>
@@ -31,9 +31,9 @@ const Navbar = () => (
       <hr className="separator" />
     </div>
     <Routes>
-      <Route path="/" element={<MyProfile />} />
-      <Route path="/rockets" element={<Rockets />} />
+      <Route path="/" element={<Rockets />} />
       <Route path="/missions" element={<Missions />} />
+      <Route path="/myprofile" element={<MyProfile />} />
     </Routes>
   </nav>
 );
