@@ -27,3 +27,14 @@
   border-radius: 3%;
   cursor: pointer;
 }
+
+.cancel-reservation {
+  border: 1px solid rgba(0, 0, 0, 0.76);
+  background-color: white;
+  color: rgba(0, 0, 0, 0.76);
+  width: max-content;
+  height: max-content;
+  padding: 10px 15px;
+  border-radius: 3%;
+  cursor: pointer;
+}
