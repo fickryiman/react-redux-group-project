@@ -1,61 +1,59 @@
-.profile-container {
-  width: 100%;
+.containers {
+  display: flex;
+  flex-direction: column;
 }
 
-.profile-table {
-  width: 95%;
-  border: none;
-  margin: auto;
+.header {
+  display: flex;
+  justify-content: space-around;
 }
 
-.profile-table table {
-  border-collapse: collapse;
-  border: none;
+.my-missions {
+  margin-left: -34vw;
 }
 
-.profile-table td {
-  border: none;
+.my-rockets {
+  margin-left: -33vw;
 }
 
-.mission-table,
-.rocket-table thead {
-  border: none;
+.lists {
+  display: flex;
+  justify-content: space-around;
 }
 
-.mission-table,
-.rocket-table {
-  width: 100%;
+.ul-missions,
+.ul-rockets {
+  list-style-type: none;
+  margin-top: 0;
+  padding-left: 0;
 }
 
-.mission-head {
-  width: 50%;
-  font-size: 1.2rem;
-  font-weight: bold;
+.missions-lists {
+  width: 47%;
 }
 
-.mission-row {
-  height: 3.5rem;
+.rockets-lists {
+  width: 45%;
 }
 
-.mission-row td {
-  border: 1px solid #d5cdcd;
+.mission-list {
+  border-right: 1px solid rgba(0, 0, 0, 0.345);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.345);
+  border-left: 1px solid rgba(0, 0, 0, 0.345);
+  padding: 15px;
 }
 
-.rocket-table {
-  vertical-align: top;
+.missions-lists > ul > li:nth-child(1) {
+  border-top: 1px solid rgba(0, 0, 0, 0.345);
 }
 
-.rocket-table,
-.mission-table thead {
-  border: none;
+.rocket-list {
+  border-right: 1px solid rgba(0, 0, 0, 0.345);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.345);
+  border-left: 1px solid rgba(0, 0, 0, 0.345);
+  padding: 15px;
 }
 
-.rocket-head {
-  width: 50%;
-  font-size: 1.2rem;
-  font-weight: bold;
-}
-
-.key-div {
-  height: 0;
+.rockets-lists > ul > li:nth-child(1) {
+  border-top: 1px solid rgba(0, 0, 0, 0.345);
 }
