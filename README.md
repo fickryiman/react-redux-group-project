@@ -219,7 +219,7 @@ NOTE: Rockets is the default view, so must fetch rockets data when the applicati
 ## 🚀 Live Demo <a name=""></a>
 
 <!-- > Add a link to your deployed project. -->
-- Click the following url for [... Live Demo ...]()
+- Click the following url for [... Live Demo ...](https://react-redux-group-project-green.vercel.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
