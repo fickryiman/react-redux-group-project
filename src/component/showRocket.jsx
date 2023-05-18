@@ -1,14 +1,26 @@
+import { useDispatch } from 'react-redux';
+import { reserveRocket } from '../Redux/rockets/rocketSlice';
 import './showRocket.css';
 
-const showRocket = (rockets) => (
-  <div className="card" key={rockets.id}>
-    <img src={rockets.flickr_images[0]} className="flickr-images" alt="flickr-images" />
-    <div className="name-desc-button">
-      <h3 className="rocket-name">{rockets.rocket_name}</h3>
-      <p className="description">{rockets.description}</p>
-      <button type="button" className="reserve-rocket">Reserve Rocket</button>
-    </div>
-  </div>
-);
+const ShowRocket = (rocketId, rocketName, description, flickrImages) => {
+  const dispatch = useDispatch();
 
-export default showRocket;
+  return (
+    <div className="card" key={rocketId}>
+      <img src={flickrImages[0]} className="flickr-images" alt="flickr-images" />
+      <div className="name-desc-button">
+        <h3 className="rocket-name">{rocketName}</h3>
+        <p className="description">{description}</p>
+        <button
+          type="button"
+          className="reserve-rocket"
+          onClick={() => dispatch(reserveRocket(rocketId))}
+        >
+          Reserve Rocket
+        </button>
+      </div>
+    </div>
+  );
+};
+
+export default ShowRocket;
