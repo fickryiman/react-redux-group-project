@@ -14,7 +14,6 @@ const ShowRocket = (rocketId, rocketName, description, flickrImages) => {
         <button
           type="button"
           className="reserve-rocket"
-          id={rocketId}
           onClick={() => dispatch(reserveRocket(rocketId))}
         >
           Reserve Rocket
