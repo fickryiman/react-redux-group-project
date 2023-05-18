@@ -17,43 +17,13 @@ const rocketSlice = createSlice({
   initialState,
   reducers: {
     reserveRocket: (state, action) => {
-      const reserveButton = document.getElementById(action.payload);
-
-      if (reserveButton.classList.contains('cancel-reservation')) {
-        reserveButton.classList = 'reserve-rocket';
-        reserveButton.innerText = 'Reserve Rocket';
-
-        const newState = state.newState.map((rocket) => {
-          if (rocket.rocketId !== action.payload) {
-            return rocket;
-          }
-          return { ...rocket, reserved: true };
-        });
-        state.newState = newState;
-      } else {
-        reserveButton.classList = 'cancel-reservation';
-        reserveButton.innerText = 'Cancel Reservation';
-
-        let newState;
-
-        if (state.newState) {
-          newState = state.newState.map((rocket) => {
-            if (rocket.rocketId !== action.payload) {
-              return rocket;
-            }
-            return { ...rocket, reserved: true };
-          });
-          state.newState = newState;
-        } else {
-          newState = state.rockets.map((rocket) => {
-            if (rocket.rocketId !== action.payload) {
-              return rocket;
-            }
-            return { ...rocket, reserved: true };
-          });
-          state.newState = newState;
+      const newState = state.rockets.map((rocket) => {
+        if (rocket.rocketId !== action.payload) {
+          return { ...rocket };
         }
-      }
+        return { ...rocket, reserved: !rocket.reserved };
+      });
+      return { ...state, rockets: newState };
     },
   },
   extraReducers: (builder) => {
@@ -74,6 +44,7 @@ const rocketSlice = createSlice({
           rocketName,
           description,
           flickrImages,
+          reserved: false,
         };
       });
       state.rockets = rocketArray;
