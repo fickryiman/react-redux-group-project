@@ -6,7 +6,7 @@ import Planet from '../images/planet.png';
 import './Navbar.css';
 
 const Navbar = () => (
-  <>
+  <nav>
     <div className="bar">
       <img className="logo" src={Planet} alt="planet" />
       <h1 className="title">Space Traveler&apos;s Hub</h1>
@@ -35,7 +35,7 @@ const Navbar = () => (
       <Route path="/missions" element={<Missions />} />
       <Route path="/myprofile" element={<MyProfile />} />
     </Routes>
-  </>
+  </nav>
 );
 
 export default Navbar;
