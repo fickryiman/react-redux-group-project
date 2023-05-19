@@ -98,7 +98,7 @@ The My Profile section displays all reserved rockets and space missions.
   * Render a table with the missions' data (as per design).
   
 - Redux: Write actions and reducers for booking rockets/dragons and joining missions
-  * When a user clicks the "Reserve rocket" button or "Reserve dragon" button _[only if your team has 3 members]_, action needs to be dispatched to update the store. You need to get the ID of the reserved rocket and update the state. Remember you mustn't mutate the state. Instead, you need to return a new state object with all rockets, but the selected rocket will have an extra key `reserved` with its value set to `true`. You could use a JS `filter()` or `map()` to set the value of the new state - i.e.:
+  * When a user clicks the "Reserve rocket" button action needs to be dispatched to update the store. You need to get the ID of the reserved rocket and update the state. Remember you mustn't mutate the state. Instead, you need to return a new state object with all rockets, but the selected rocket will have an extra key `reserved` with its value set to `true`. You could use a JS `filter()` or `map()` to set the value of the new state - i.e.:
 
   ```javascript
     const newState = state.map((rocket) => {
@@ -116,7 +116,7 @@ The My Profile section displays all reserved rockets and space missions.
 
 - Render UI: conditional components rendering
   * Rockets that have already been reserved should show a "Reserved" badge and "Cancel reservation" button instead of the default "Reserve rocket" (as per design) .
-  * Dragons that have already been reserved should show a "Reserved" badge and "Cancel reservation" button instead of the default "Reserve dragon" (as per design) _[only if your team has 3 members]_.
+  * Dragons that have already been reserved should show a "Reserved" badge and "Cancel reservation" button instead of the default.
   * Missions that the user has joined already should show a badge "Active Member" instead of the default "NOT A MEMBER" and a button "Leave Mission" instead of the "Join Mission" button (as per design).
   * Rockets/Dragons and Missions should use the React conditional rendering syntax:
 

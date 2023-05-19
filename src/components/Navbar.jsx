@@ -2,8 +2,8 @@ import { NavLink, Routes, Route } from 'react-router-dom';
 import MyProfile from './MyProfile';
 import Rockets from './Rockets';
 import Missions from './Missions';
-import './Navbar.css';
 import Planet from '../images/planet.png';
+import './Navbar.css';
 
 const Navbar = () => (
   <nav>

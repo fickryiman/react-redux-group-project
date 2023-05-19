@@ -1,7 +1,7 @@
 import { useSelector, useDispatch } from 'react-redux';
-import { useEffect } from 'react';
-import showRocket from './showRocket';
+import React, { useEffect } from 'react';
 import { getRockets } from '../Redux/rockets/rocketSlice';
+import showRocket from './showRocket';
 
 import './Rockets.css';
 
@@ -21,7 +21,6 @@ const Rockets = () => {
 
   return (
     <div className="rockets-container">
-      {/* <div>{showRocket(rockets)}</div> */}
       <div className="cards">
         {rockets.map((rocket) => showRocket(
           rocket.rocketId,
