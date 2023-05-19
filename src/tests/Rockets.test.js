@@ -1,13 +1,14 @@
-import fetchRocket from './__mock__/RocketSlice';
+import React from 'react';
+import { render } from '@testing-library/react';
+import { Provider } from 'react-redux';
+import Rockets from '../components/Rockets';
+import store from '../redux/store';
 
-describe('Rockets must pass the test', () => {
-  test('Fetch rockets must return data', () => {
-    expect(fetchRocket()).toBeDefined();
-  });
-  test('Fetch rockets return value length must be', () => {
-    expect(fetchRocket()).toHaveLength(5);
-  });
-  test('Fetch rockets return name should be', () => {
-    expect(fetchRocket()[1].name).toBe('Falcon 9');
-  });
+test('It should render correctly', () => {
+  const tree = render(
+    <Provider store={store}>
+      <Rockets />
+    </Provider>,
+  );
+  expect(tree).toMatchSnapshot();
 });

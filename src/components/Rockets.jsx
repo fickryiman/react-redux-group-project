@@ -21,7 +21,6 @@ const Rockets = () => {
 
   return (
     <div className="rockets-container">
-      {/* <div>{showRocket(rockets)}</div> */}
       <div className="cards">
         {rockets.map((rocket) => showRocket(
           rocket.rocketId,
