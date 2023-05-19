@@ -7,7 +7,7 @@ test('It should render correctly', () => {
   const tree = render(
     <BrowserRouter>
       <Navbar />
-    </BrowserRouter>
+    </BrowserRouter>,
   );
   expect(tree).toMatchSnapshot();
 });
