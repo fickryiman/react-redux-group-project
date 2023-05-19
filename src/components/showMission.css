@@ -1,0 +1,66 @@
+.mission-name {
+  width: 11%;
+}
+
+td {
+  padding: 0.5rem;
+}
+
+.mission-description {
+  width: 65%;
+}
+
+.member-button {
+  width: 7rem;
+}
+
+table,
+td,
+th {
+  border: 1px solid grey;
+}
+
+.join-button {
+  width: 8.5rem;
+  text-align: center;
+}
+
+.join-button button {
+  height: 2.5rem;
+  width: 8rem;
+  background-color: inherit;
+  border-radius: 4px;
+}
+
+.mission-body tr:nth-child(odd) {
+  background-color: gainsboro;
+}
+
+.not-member {
+  background-color: grey;
+  color: white;
+}
+
+.active-member {
+  background-color: mediumturquoise;
+  color: white;
+  border: 1px solid mediumturquoise;
+  border-radius: 4px;
+  width: 7.5rem;
+  height: 1.5rem;
+}
+
+.non-active {
+  background-color: grey;
+  border: 1px solid grey;
+  color: white;
+  border-radius: 8px;
+  width: 7.5rem;
+  height: 1.5rem;
+}
+
+.border-red {
+  border: 2px solid red;
+  background-color: white;
+  color: red;
+}

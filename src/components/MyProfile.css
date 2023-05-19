@@ -1,0 +1,59 @@
+.containers {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+}
+
+.my-missions {
+  margin-left: -34vw;
+}
+
+.my-rockets {
+  margin-left: -33vw;
+}
+
+.lists {
+  display: flex;
+  justify-content: space-around;
+}
+
+.ul-missions,
+.ul-rockets {
+  list-style-type: none;
+  margin-top: 0;
+  padding-left: 0;
+}
+
+.missions-lists {
+  width: 47%;
+}
+
+.rockets-lists {
+  width: 45%;
+}
+
+.mission-list {
+  border-right: 1px solid rgba(0, 0, 0, 0.345);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.345);
+  border-left: 1px solid rgba(0, 0, 0, 0.345);
+  padding: 15px;
+}
+
+.missions-lists > ul > li:nth-child(1) {
+  border-top: 1px solid rgba(0, 0, 0, 0.345);
+}
+
+.rocket-list {
+  border-right: 1px solid rgba(0, 0, 0, 0.345);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.345);
+  border-left: 1px solid rgba(0, 0, 0, 0.345);
+  padding: 15px;
+}
+
+.rockets-lists > ul > li:nth-child(1) {
+  border-top: 1px solid rgba(0, 0, 0, 0.345);
+}

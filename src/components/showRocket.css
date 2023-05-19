@@ -1,0 +1,51 @@
+.card {
+  display: flex;
+  gap: 2%;
+  margin-bottom: 2.5%;
+}
+
+.flickr-images {
+  width: 17.5%;
+}
+
+.name-desc-button {
+  display: flex;
+  flex-direction: column;
+}
+
+.rocket-name {
+  margin: 0;
+}
+
+.reserve-rocket {
+  width: max-content;
+  height: max-content;
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3%;
+  cursor: pointer;
+}
+
+.cancel-reservation {
+  border: 1px solid rgba(0, 0, 0, 0.76);
+  background-color: white;
+  color: rgba(0, 0, 0, 0.76);
+  width: max-content;
+  height: max-content;
+  padding: 10px 15px;
+  border-radius: 3%;
+  cursor: pointer;
+}
+
+.badges {
+  background-color: #2fa5b7;
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  padding: 1px 5px;
+  border-radius: 5px;
+  margin-right: 1%;
+}

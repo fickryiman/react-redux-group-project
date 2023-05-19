@@ -1,0 +1,12 @@
+.missions-div {
+  margin-top: 3%;
+}
+
+table {
+  border: 1px solid grey;
+  border-collapse: collapse;
+}
+
+thead td {
+  font-weight: bold;
+}
